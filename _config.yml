@@ -1,0 +1,27 @@
+title: "Dev Portfolio"
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Aspiring Developer | Portfolio & Tech Blog. 
+  Focusing on Algorithm, Web Development, and TIL.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+github_username: yourusername
+
+# Build settings
+theme: minima # We will start with a clean minima base or custom
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom Collections / Data
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
