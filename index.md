@@ -117,28 +117,42 @@ title: Home
 <section class="latest-til-section">
   <div class="section-header">
     <h2 class="section-title"><i class="fa-solid fa-book-open text-gradient-icon"></i> Latest TIL</h2>
-    <a href="{{ '/til/' | relative_url }}" class="view-all-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+    <a href="https://velog.io/@codnjs623/posts" target="_blank" rel="noopener noreferrer" class="view-all-link">모든 글 보기 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   
-  <div class="til-list">
-    {% if site.posts.size > 0 %}
-      {% for post in site.posts limit:3 %}
-        <a href="{{ post.url | relative_url }}" class="til-card">
-          <div class="til-card-left">
-            <span class="til-date"><i class="fa-regular fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
-            <h3 class="til-title">{{ post.title }}</h3>
-          </div>
-          <div class="til-card-right">
-            <span class="read-more-btn">Read Entry <i class="fa-solid fa-chevron-right"></i></span>
-          </div>
-        </a>
-      {% endfor %}
-    {% else %}
-      <div class="no-posts-card">
-        <i class="fa-regular fa-folder-open icon-empty"></i>
-        <h3 class="no-posts-text">No TIL posts published yet.</h3>
-        <p class="no-posts-sub">Write markdown files in `_posts` folder to share your learnings!</p>
+  <div class="til-card-grid">
+    <!-- TIL Card 1 -->
+    <div class="til-post-card">
+      <div class="til-post-content">
+        <div class="til-post-meta">
+          <span class="til-post-category"><i class="fa-solid fa-server"></i> 백엔드 • Node.js</span>
+          <span class="til-post-date">2026.08.13</span>
+        </div>
+        <h3 class="til-post-title">Node.js 비동기 처리와 이벤트 루프의 이해</h3>
+        <p class="til-post-summary">Node.js의 핵심 구조인 싱글 스레드 논블로킹 I/O 모델과 이를 가능하게 하는 이벤트 루프(Event Loop)의 단계를 깊이 있게 알아봅니다. Call Stack, Callback Queue의 관계와 마이크로태스크 큐의 우선순위를 분석합니다.</p>
       </div>
-    {% endif %}
+      <div class="til-post-footer">
+        <a href="https://velog.io/@codnjs623/posts" target="_blank" rel="noopener noreferrer" class="til-read-btn">
+          글 읽기 <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- TIL Card 2 -->
+    <div class="til-post-card">
+      <div class="til-post-content">
+        <div class="til-post-meta">
+          <span class="til-post-category"><i class="fa-solid fa-laptop-code"></i> 프론트엔드 • React</span>
+          <span class="til-post-date">2026.08.12</span>
+        </div>
+        <h3 class="til-post-title">React 19 Server Components와 데이터 페칭 최적화</h3>
+        <p class="til-post-summary">React 19에서 정식 도입된 React Server Components(RSC)의 동작 원리를 파헤칩니다. 클라이언트 컴포넌트와의 경계를 설계하고, 서버단 데이터 페칭과 Suspense를 활용하여 번들 사이즈와 로딩 타임을 비약적으로 절감하는 기법을 소개합니다.</p>
+      </div>
+      <div class="til-post-footer">
+        <a href="https://velog.io/@codnjs623/posts" target="_blank" rel="noopener noreferrer" class="til-read-btn">
+          글 읽기 <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
   </div>
 </section>

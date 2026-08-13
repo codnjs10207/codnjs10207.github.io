@@ -785,44 +785,77 @@ blockquote p {
   transform: translateY(-2px);
 }
 
-/* Responsive Rules */
-@media (max-width: 768px) {
-  .nav-container {
-    padding: 1rem;
-  }
-  
-  .site-title {
-    font-size: 1.25rem;
-  }
-  
-  .nav-item span {
-    display: none; /* Hide nav text to save space, keep icons */
-  }
-  
-  .nav-item {
-    padding: 0.5rem;
-    font-size: 1.1rem;
-  }
-  
-  .hero-title {
-    font-size: 2.4rem;
-  }
-  
-  .hero-desc {
-    font-size: 1rem;
-  }
-  
-  .main-content {
-    padding: 2rem 1rem 4rem 1rem;
-  }
-  
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .footer-container {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
+
+/* TIL Card Grid Styles */
+.til-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.til-post-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+}
+
+.til-post-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.til-post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.til-post-category {
+  color: var(--accent-secondary);
+  font-weight: 600;
+}
+
+.til-post-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.til-post-summary {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.til-post-footer {
+  margin-top: auto;
+}
+
+.til-read-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+.til-read-btn:hover {
+  opacity: 0.8;
 }
