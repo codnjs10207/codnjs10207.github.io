@@ -12,7 +12,9 @@ title: Home
       </div>
       <p class="hero-point">GOOD CODE IS WORTH MORE THAN GOOD DOCUMENTATION.</p>
       <h1 class="hero-title">이채원</h1>
-      <p class="hero-desc">I design and build visually stunning, high-performance web applications and love solving algorithmic problems. This is my digital garden for documenting my technical journey, sharing insights, and showcasing my work.</p>
+      <p class="hero-desc">복잡한 문제를 마주하고 그 원리를 깊이 있게 파고들어 해결하는 과정을 즐깁니다.<br>
+  단순히 기능을 구현하는 것을 넘어, '왜 이 기술을 써야 하는가'를 끊임없이 질문하며 최적의 로직을 탐구합니다.<br>
+  매일의 학습 기록(TIL)을 거름 삼아, 어제보다 더 효율적이고 깔끔한 코드를 작성하는 엔지니어로 성장하고 있습니다.</p>
       <div class="social-links">
         <a href="https://github.com/codnjs10207" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
           <i class="fa-brands fa-github"></i> GitHub
