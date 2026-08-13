@@ -12,7 +12,7 @@ title: Home
     <h1 class="hero-title">Hello, I'm <span class="gradient-text">an Aspiring Developer</span> 👋</h1>
     <p class="hero-desc">I design and build visually stunning, high-performance web applications and love solving algorithmic problems. This is my digital garden for documenting my technical journey, sharing insights, and showcasing my work.</p>
     <div class="social-links">
-      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+      <a href="https://github.com/codnjs10207" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
         <i class="fa-brands fa-github"></i> GitHub
       </a>
       <a href="mailto:{{ site.email }}" class="btn btn-outline">

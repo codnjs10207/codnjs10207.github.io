@@ -1,11 +1,11 @@
-title: "Dev Portfolio"
+title: "이채원 | Portfolio"
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Aspiring Developer | Portfolio & Tech Blog. 
   Focusing on Algorithm, Web Development, and TIL.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yourusername.github.io" # the base hostname & protocol for your site
-github_username: yourusername
+github_username: codnjs10207
 
 # Build settings
 theme: minima # We will start with a clean minima base or custom
