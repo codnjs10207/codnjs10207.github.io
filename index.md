@@ -4,20 +4,26 @@ title: Home
 ---
 
 <section class="hero">
-  <div class="hero-content">
-    <div class="status-badge">
-      <span class="pulse-dot"></span>
-      <span class="status-text">Available for New Opportunities</span>
+  <div class="hero-wrapper">
+    <div class="hero-content">
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Available for New Opportunities</span>
+      </div>
+      <p class="hero-point">GOOD CODE IS WORTH MORE THAN GOOD DOCUMENTATION.</p>
+      <h1 class="hero-title">이채원</h1>
+      <p class="hero-desc">I design and build visually stunning, high-performance web applications and love solving algorithmic problems. This is my digital garden for documenting my technical journey, sharing insights, and showcasing my work.</p>
+      <div class="social-links">
+        <a href="https://github.com/codnjs10207" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="mailto:{{ site.email }}" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i> Email Me
+        </a>
+      </div>
     </div>
-    <h1 class="hero-title">Hello, I'm <span class="gradient-text">an Aspiring Developer</span> 👋</h1>
-    <p class="hero-desc">I design and build visually stunning, high-performance web applications and love solving algorithmic problems. This is my digital garden for documenting my technical journey, sharing insights, and showcasing my work.</p>
-    <div class="social-links">
-      <a href="https://github.com/codnjs10207" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-      <a href="mailto:{{ site.email }}" class="btn btn-outline">
-        <i class="fa-solid fa-envelope"></i> Email Me
-      </a>
+    <div class="hero-image">
+      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="이채원 프로필 사진">
     </div>
   </div>
 </section>
